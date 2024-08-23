@@ -2,213 +2,152 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.quiz-wrapper{
+section{
+    position: relative;
     width: 100%;
-    min-height: 100vh;
-    padding: 15px;
-    background-color: palevioletred;
     display: flex;
-    justify-content: center;
+    min-height: 100%;
+    padding: 100px;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
 }
-.quiz-box{
-    width: 550px;
-    min-height: 350px;
-    background-color: white;
-    padding: 20px;
-    box-shadow: rgba(0,0,0,0.8) 0px 4px 12px;
-    border-radius: 50px;
+.logo{
+    position: relative;
+    max-width: 80px;
+}
+header ul{
+    position: relative;
+    display: flex;
+}
+header ul li{
+    list-style: none;
+}
+header ul li a{
+    display: inline-block;
+    color: white;
+    font-weight: 400;
+    margin-left: 40px;
+    text-decoration:none;
     
 }
-.question-count{
-    text-align: center;
-    margin-top: 15px;
-}
-.question-count .count{
-    font-size: 15px;
-    font-weight: 700;
-    color: #8a0909;
-
-}
-
-.question-count .count span{
-    color: #660404;
-    font-size: 25px;
-}
-
-.question-count .question-title{
-    font-size: 20px;
+header ul li a:hover{
+    color: black;
+    transform: translateY(-10px);
     font-weight: 600;
-    color: rgb(117, 20, 20);
 }
 
-.question-box{
-    margin-top: 20px;
-    display: flex;
-    gap: 15px;
-    align-itam:center
-}
-.question-box #question-number{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(189, 19, 19);
-    color: aliceblue;
-    font-size: 20px;
-    width: 35px;
-    height: 35px;
-    border-radius: 5px;
-    padding: 8px;
-    text-align: center;
-}
-.question-box #question{
-    font-size: 18px;
-    font-weight: 500;
-    background-color: aliceblue;
-    color: #660404;
-    padding: 10px px;
-    box-shadow: #94040450 0px 4px 12px
-}
-.answers-box{
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 45px;
-    gap: 35px 20px;
-}
-.answers-box .box{
-    width: calc(50% - 10px);
+.content{
     position: relative;
-}
-.answers-box .box .answer-number{
-    position:absolute;
-    top: -20px;
-    right: 5%;
-    font-size: 15px;
-    font-weight: 600;
-    text-align: center;
-    color: white;
-    background-color: rgb(146, 23, 29);
-    width: 40px;
-    padding: 5px;
-    border-radius: 10px;
-    box-shadow: rgb(110, 22, 22) 0px 4px 12px;
-}
-.answers-box .box .answer-lable{
-    display: flex;
-    align-items: center;
-    background-color: #b93232;
-    border: 2px solid #c73d7e;
     width: 100%;
-    color:black ;
-    padding: 15px 15px;
-    border-radius: 20px;
-    box-shadow: rgb(110, 22, 22) 0px 4px 12px; ;
-}
-.answers-box .box input:checked~.answer-lable{
-    background-color: beige;
-    border: 2px solid #c73d7e;  
-}
-.button-box{
-    margin-top: 40px;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 35px;
+    justify-content: space-between;
+    align-items: center;
 }
-.button-box button{
-    width: calc(70% - 15px);
-    background-color: #b93232;
-    border: 2px solid #c73d7e;
-    padding: 12px 12px;
+.textBox{
+    position: relative;
+    max-width: 500px;
+}
+.textBox h2{
     color: black;
-    font-size: 15px;
+    font-size: 2em;
+    line-height: 1.2em;
     font-weight: 500;
-    cursor: pointer;
-    transition: all 0.5s;
-    padding: 13px 13px;
-    border-radius: 15px;
-    box-shadow: rgb(110, 22, 22) 0px 4px 12px;
 }
-.button-box button:hover{
-    border: 2px solid #c73d7e;
-    background-color: rgb(223, 109, 68);
+.textBox h2 span{
+    color: rgb(1, 54, 1);
+    font-size: 1.3em;
+    font-weight: 800;
+}
+.textBox p{
     color: black;
 }
-.button-box .submit-btn{
-    display: none; 
+.textBox a{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background: olivedrab;
+    color: white;
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+    
 }
 
-.result-show{
-    background-color: white;
-    padding: 15px;
-    border-radius: 10px;
-    display: none;
 
+.imgBox{
+    width: 600px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 50px;
+    margin-top: 50px;
+}
+.imgBox img{
+    max-width: 350px;
+    cursor: pointer;
+}
+.imgBox img:hover{
+    transform: translateY(-20px);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.thumb{
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translate(-50%);
+    display: flex;
+}
+.thumb li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    cursor: pointer;
+    transition: o.6s;
+}
+.thumb li:hover{
+    transform: translateY(-15px);
+}
+.thumb li img{
+    max-width: 60px;
+}
+.sci{
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.sci li{
+    list-style: none;
+}
+.sci li a{
+    display: inline-block;
+    margin: 5px 0;
+    transform: scale(0.6);
+    filter: invert(1);
+}
+.circle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(21, 71, 21, 0.959);
+    height: 100%;
+    clip-path: circle(600px at right);
+}
